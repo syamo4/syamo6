@@ -1,0 +1,64 @@
+<！DOCTYPE html >
+< html >
+  < 頭>
+    < メタ 文字セット = " utf-8 " >
+
+    < タイトル>数字当てゲーム</ タイトル>
+
+    < スタイル>
+      html {
+        font-family：sans-serif;
+      }
+
+      本文 {
+        幅：50 ％ ;
+        max-width：800 px ;
+        min-width：480 px ;
+        マージン：0自動;
+      }
+
+      。lastResult {
+        色：白;
+        パディング：3 px ;
+      }
+    </ スタイル>
+  </ 頭>
+
+  < ボディ>
+    < h1 >数字当てゲーム</ h1 >
+
+    < p > 1から100の間の乱数を選択しました。10ターン以下で推測できるかどうかを確認してください。推測が高すぎるか低すぎるかをお知らせします。</ p >
+
+    < div  class = " form " >
+      < ラベル 用 = " guessField " >推測入力します。</ ラベル> < 入力 タイプ =" テキスト " ID =" guessField " クラス =" guessFieldを " >
+      < input  type = " submit " value = " Submit guess " class = " guessSubmit " >
+    </ div >
+
+    < div  class = " resultParas " >
+      < p  class = " 推測 " > </ p >
+      < p  class = " lastResult " > </ p >
+      < p  class = " lowOrHi " > </ p >
+    </ div >
+
+    < スクリプト>
+
+      // JavaScriptがここに入ります
+
+    </ スクリプト>
+    let randomNumber = Math.floor(Math.random() * 100) + 1;
+
+const guesses = document.querySelector('.guesses');
+const lastResult = document.querySelector('.lastResult');
+const lowOrHi = document.querySelector('.lowOrHi');
+
+const guessSubmit = document.querySelector('.guessSubmit');
+const guessField = document.querySelector('.guessField');
+
+let guessCount = 1;
+let resetButton;
+function checkGuess() {
+  alert('ここに好きな文字を入れてください');
+}
+checkGuess();
+  </ body >
+</ html >
